@@ -5,6 +5,9 @@ body {
   justify-content: center;
   align-items: center;
   background-color: hsl(30, 54%, 90%);
+  line-height: 1.6;
+  color: rgb(104,100,97);
+
 }
 
 section {
@@ -42,27 +45,39 @@ p {
 }
 h2 {
   color: hsl(14, 45%, 36%);
+  font-weight: 400;
+  margin-bottom: 0px;
 }
 
 .first-container {
-  padding: 20px;
+  border-radius: 15px;
+  padding: 0px 30px;
   background-color: hsl(330, 100%, 98%);
   width: 90%;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   margin-top: 10px;
+  line-height: 2;
 }
 
 ul li {
   font-family: "outfit";
 }
-span {
-  font-weight: bold;
+.span {
+  font-weight:bolder;
   color: hsl(332, 51%, 32%);
+  margin-bottom: 0px;
+}
+.prep{
+  margin-top: 5px;
+}
+
+.Ingredients {
+  line-height: 2;
 }
 
 hr {
-  width: 90%;
-  background-color: hsl(30, 18%, 87%);
+  width: 100%;
+  background-color: hsl(24, 5%, 18%)
 }
 ol li {
   font-family: "outfit";
@@ -76,4 +91,34 @@ td {
 }
 .fat {
   border: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+li::before {content: "•"; 
+  color: hsl(14, 45%, 36%);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em
+}
+ol {
+  list-style: none; 
+  counter-reset: li;
+}
+
+ol li::before {content: counter(li); 
+  color: hsl(14, 45%, 36%);
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+ol li {counter-increment: li}
+
+.left-cell{
+  padding-left: 30px;
+}
+.small{
+  width: 42%;
 }
